@@ -12,6 +12,6 @@ public abstract class Race extends Battle {
     public abstract void run();
 
     public void die() {
-        System.out.println(name + " Погиб");
+        System.out.println(name + " Погибает!");
     }
 }

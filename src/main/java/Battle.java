@@ -7,13 +7,13 @@ class Battle {
         knight.setName("Крестоносец");
         Archer archer = new Archer();
         archer.setName("Сьюзан");
-        int n = new Random().nextInt(3);
-        int m = new Random().nextInt(3);
-        if (n == 1) {
+        int queue = new Random().nextInt(2);  //очередь, если 0, то первым ходит рыцарь, инаяче лучник
+        int luck = new Random().nextInt(2);   //везение, если 0, то везет рыцарью, иначе лучнику
+        if (queue == 0) {
             knight.run();
             archer.run();
             knight.attack();
-            if (m == 2) {
+            if (luck == 1) {
                 archer.dodge();
                 archer.shoot();
                 knight.die();
@@ -24,7 +24,7 @@ class Battle {
             archer.run();
             knight.run();
             archer.shoot();
-            if (m == 1) {
+            if (luck == 0) {
                 knight.protection();
                 knight.attack();
                 archer.die();
