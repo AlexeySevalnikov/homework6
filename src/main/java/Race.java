@@ -1,5 +1,6 @@
-public abstract class Race extends Battle {
+public abstract class Race {
     private String name;
+    private String specialization;
 
     public String getName() {
         return name;
@@ -9,9 +10,17 @@ public abstract class Race extends Battle {
         this.name = name;
     }
 
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    public void setSpecialization(String specialization) {
+        this.specialization = specialization;
+    }
+
     public abstract void run();
 
     public void die() {
-        System.out.println(name + " Погибает!");
+        System.out.println(specialization + " " + name + " Погибает!");
     }
 }

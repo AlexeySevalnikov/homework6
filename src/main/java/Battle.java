@@ -3,10 +3,8 @@ import java.util.Random;
 class Battle {
 
     public void start() {
-        Knight knight = new Knight();
-        knight.setName("Крестоносец");
-        Archer archer = new Archer();
-        archer.setName("Сьюзан");
+        Knight knight = new Knight("Рыцарь", "Крестоносец");
+        Archer archer = new Archer("Лучник","Сьюзан");
         int queue = new Random().nextInt(2);  //очередь, если 0, то первым ходит рыцарь, инаяче лучник
         int luck = new Random().nextInt(2);   //везение, если 0, то везет рыцарью, иначе лучнику
         if (queue == 0) {
