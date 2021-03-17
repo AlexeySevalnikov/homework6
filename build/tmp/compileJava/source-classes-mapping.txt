@@ -1,14 +1,14 @@
-CloseCombat.java
- CloseCombat
-DistantBattle.java
- DistantBattle
-Battle.java
- Battle
-Archer.java
- Archer
-Main.java
- Main
 Race.java
  Race
 Knight.java
  Knight
+Battle.java
+ Battle
+Archer.java
+ Archer
+CloseCombat.java
+ CloseCombat
+DistantBattle.java
+ DistantBattle
+Main.java
+ Main
